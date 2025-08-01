@@ -1,12 +1,13 @@
 class KittenGenerator {
     constructor() {
         this.catWords = null;
+        this.catColors = null;
         this.catHistory = [];
         this.currentIndex = -1;
         this.isGenerating = false;
         
         this.initializeElements();
-        this.loadCatWords();
+        this.loadData();
         this.bindEvents();
     }
     
@@ -22,16 +23,24 @@ class KittenGenerator {
         this.totalCatsEl = document.getElementById('total-cats');
     }
     
-    async loadCatWords() {
+    async loadData() {
         try {
-            const response = await fetch('cat-words.json');
-            this.catWords = await response.json();
+            // Load both cat words and colors
+            const [catWordsResponse, colorsResponse] = await Promise.all([
+                fetch('cat-words.json'),
+                fetch('colors.json')
+            ]);
+            
+            this.catWords = await catWordsResponse.json();
+            this.catColors = await colorsResponse.json();
+            
             console.log('Cat words loaded:', Object.keys(this.catWords).length, 'categories');
+            console.log('Cat colors loaded:', Object.keys(this.catColors).length, 'color categories');
             
             // Generate the first cat
             await this.generateNextCat();
         } catch (error) {
-            console.error('Error loading cat words:', error);
+            console.error('Error loading data:', error);
             // Fallback to basic generation
             await this.generateNextCat();
         }
@@ -87,8 +96,13 @@ class KittenGenerator {
             if (adj) prompt += adj + " ";
         }
         
-        // Add color/pattern
-        if (Math.random() > 0.4) {
+        // Add detailed color from colors.json (prioritize this over cat-words colors)
+        if (Math.random() > 0.2 && this.catColors) {
+            const allColorCategories = Object.values(this.catColors).flat();
+            const color = this.getRandomItem(allColorCategories);
+            if (color) prompt += color + " ";
+        } else if (Math.random() > 0.4) {
+            // Fallback to original colors/patterns if colors.json not loaded
             const colors = this.catWords.colors || [];
             const patterns = this.catWords.patterns || [];
             const colorPattern = [...colors, ...patterns];
