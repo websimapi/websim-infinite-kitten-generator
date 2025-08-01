@@ -1,0 +1,80 @@
+{
+  "adjectives": [
+    "adorable", "fluffy", "tiny", "playful", "sleepy", "curious", "mischievous", 
+    "gentle", "sweet", "precious", "fuzzy", "cuddly", "energetic", "lazy", 
+    "chubby", "skinny", "elegant", "graceful", "clumsy", "bouncy", "sneaky",
+    "innocent", "wise", "silly", "dramatic", "regal", "majestic", "dainty",
+    "fierce", "brave", "timid", "bold", "serene", "peaceful", "alert",
+    "dreamy", "mystical", "magical", "enchanting", "charming", "delightful"
+  ],
+  "colors": [
+    "orange", "ginger", "tabby", "black", "white", "grey", "gray", "brown",
+    "cream", "silver", "golden", "chocolate", "cinnamon", "lilac", "blue",
+    "tortoiseshell", "calico", "tuxedo", "siamese", "seal point", "flame point",
+    "smoke", "shaded", "chinchilla", "cameo", "red", "buff", "fawn", "caramel",
+    "copper", "amber", "pearl", "platinum", "snow white", "jet black", "midnight",
+    "ivory", "champagne", "vanilla", "mocha", "espresso", "latte"
+  ],
+  "patterns": [
+    "striped", "spotted", "patched", "marbled", "mottled", "dappled", "flecked",
+    "speckled", "brindle", "tabby striped", "mackerel tabby", "classic tabby",
+    "broken stripes", "solid", "bicolor", "tricolor", "colorpoint", "mitted",
+    "van pattern", "harlequin", "masked", "pointed", "shaded tips", "ticked",
+    "agouti", "rosetted", "clouded", "ghost striped", "faded", "gradient"
+  ],
+  "breeds": [
+    "Persian", "Maine Coon", "Siamese", "British Shorthair", "Ragdoll", "Abyssinian",
+    "American Shorthair", "Scottish Fold", "Sphynx", "Russian Blue", "Bengal",
+    "Birman", "Norwegian Forest Cat", "Munchkin", "Turkish Angora", "Manx",
+    "Oriental Shorthair", "Devon Rex", "Cornish Rex", "Burmese", "Tonkinese",
+    "Somali", "Turkish Van", "Chartreux", "Egyptian Mau", "Ocicat", "Bombay",
+    "Havana Brown", "Korat", "LaPerm", "Selkirk Rex", "American Curl", "Balinese",
+    "Javanese", "Snowshoe", "Ragamuffin", "Siberian", "Nebelung", "Pixie-bob"
+  ],
+  "bases": [
+    "kitten", "cat", "kitty", "feline", "tabby", "tomcat", "pussy cat",
+    "house cat", "domestic cat", "barn cat", "lap cat", "mouser", "furball"
+  ],
+  "poses": [
+    "sleeping", "stretching", "yawning", "playing", "pouncing", "stalking",
+    "sitting", "lying down", "curled up", "standing", "walking", "running",
+    "jumping", "climbing", "hunting", "grooming", "licking paws", "kneading",
+    "purring", "meowing", "hissing", "arching back", "hiding", "peeking",
+    "looking up", "looking down", "side profile", "front view", "back view",
+    "rolling over", "belly up", "crouching", "alert pose", "relaxed pose",
+    "playful stance", "defensive posture", "curious expression", "sleepy eyes",
+    "wide eyes", "blinking", "winking", "tilting head", "ears forward",
+    "ears back", "tail up", "tail down", "tail swishing", "paws tucked"
+  ],
+  "environments": [
+    "a sunny window", "a cozy bed", "a cardboard box", "a garden", "a meadow",
+    "a forest", "a living room", "a kitchen", "a bedroom", "a bathroom",
+    "a bookshelf", "a computer desk", "a piano", "a fireplace", "a porch",
+    "a balcony", "a tree", "tall grass", "flowers", "autumn leaves",
+    "snow", "rain", "sunshine", "moonlight", "candlelight", "fairy lights",
+    "a blanket", "a pillow", "a chair", "a sofa", "a table", "a cabinet",
+    "a basket", "a hammock", "a swing", "a fence", "a wall", "a roof",
+    "a barn", "a greenhouse", "a conservatory", "a library", "a cafe",
+    "a park", "a beach", "a mountain", "a field", "a pond"
+  ],
+  "accessories": [
+    "wearing a collar", "wearing a bow tie", "wearing a hat", "wearing glasses",
+    "wearing a scarf", "wearing a sweater", "wearing booties", "with a bell",
+    "with a tag", "with a toy", "with a ball of yarn", "with a mouse toy",
+    "with a feather", "with a ribbon", "with flowers", "with a bandana",
+    "with a cape", "with mittens", "with a crown", "with jewels",
+    "with a necklace", "with a bracelet", "with earrings", "with makeup"
+  ],
+  "styles": [
+    "photorealistic", "oil painting", "watercolor", "digital art", "cartoon",
+    "anime", "realistic", "artistic", "impressionist", "abstract", "minimalist",
+    "vintage", "retro", "modern", "contemporary", "classical", "baroque",
+    "renaissance", "art nouveau", "art deco", "pop art", "surreal",
+    "fantasy", "magical realism", "steampunk", "cyberpunk", "gothic",
+    "romantic", "dreamy", "ethereal", "mystical", "whimsical", "playful",
+    "professional photography", "studio lighting", "natural lighting",
+    "golden hour", "soft focus", "sharp focus", "bokeh background",
+    "macro photography", "portrait style", "landscape style"
+  ]
+}
+
