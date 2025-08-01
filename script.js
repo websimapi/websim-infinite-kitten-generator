@@ -63,13 +63,13 @@ class KittenGenerator {
     
     generateRandomPrompt() {
         if (!this.catWords) {
-            // Fallback prompts
+            // Fallback prompts - ensure all contain cat/kitten words
             const fallbackPrompts = [
-                "adorable fluffy kitten",
-                "cute orange tabby cat",
-                "playful black and white kitten",
-                "sleepy grey cat curled up",
-                "majestic long-haired cat"
+                "adorable fluffy kitten cat",
+                "cute orange tabby kitten",
+                "playful black and white cat kitten",
+                "sleepy grey cat",
+                "majestic long-haired kitten cat"
             ];
             return fallbackPrompts[Math.floor(Math.random() * fallbackPrompts.length)];
         }
@@ -103,9 +103,16 @@ class KittenGenerator {
             if (breed) prompt += breed + " ";
         }
         
-        // Add base cat/kitten
-        const bases = this.catWords.bases || ["cat", "kitten"];
-        prompt += this.getRandomItem(bases) + " ";
+        // ALWAYS add base cat/kitten - this is mandatory
+        const bases = this.catWords.bases || ["cat", "kitten", "kitty", "feline"];
+        const primaryBase = this.getRandomItem(bases);
+        prompt += primaryBase + " ";
+        
+        // Occasionally add a second cat-related word for emphasis
+        if (Math.random() > 0.7) {
+            const secondaryBase = this.getRandomItem(bases.filter(base => base !== primaryBase));
+            if (secondaryBase) prompt += secondaryBase + " ";
+        }
         
         // Add pose/action
         if (Math.random() > 0.5) {
@@ -290,4 +297,3 @@ class KittenGenerator {
 document.addEventListener('DOMContentLoaded', () => {
     new KittenGenerator();
 });
-
